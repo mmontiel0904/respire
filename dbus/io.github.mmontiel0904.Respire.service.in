@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=io.github.mmontiel0904.Respire
+Exec=@BINDIR@/respired
+SystemdService=respired.service

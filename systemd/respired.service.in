@@ -1,0 +1,21 @@
+[Unit]
+Description=Respire speaking-time monitor
+Documentation=https://github.com/mmontiel0904/respire
+PartOf=graphical-session.target
+After=graphical-session.target pipewire.service wireplumber.service
+
+[Service]
+Type=dbus
+BusName=io.github.mmontiel0904.Respire
+ExecStart=@BINDIR@/respired
+Restart=on-failure
+RestartSec=5
+# Audio never leaves the machine: the daemon (and its pw-record child)
+# can only open local Unix sockets.
+NoNewPrivileges=yes
+RestrictAddressFamilies=AF_UNIX
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+
+[Install]
+WantedBy=graphical-session.target

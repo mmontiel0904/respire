@@ -1,0 +1,22 @@
+[package]
+name = "respired"
+version = "0.1.0"
+edition = "2024"
+description = "Speaking-time monitor daemon for the Respire GNOME Shell extension"
+license = "GPL-2.0-or-later"
+repository = "https://github.com/mmontiel0904/respire"
+rust-version = "1.88"
+
+[profile.release]
+lto = true
+strip = true
+
+[dependencies]
+anyhow = "1.0.104"
+env_logger = "0.11.11"
+log = "0.4.34"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+tokio = { version = "1.53.1", features = ["rt", "macros", "process", "time", "io-util", "sync", "signal"] }
+toml = "1.1.6"
+zbus = { version = "5", default-features = false, features = ["tokio"] }

@@ -1,0 +1,8 @@
+{
+  "uuid": "respire@mmontiel0904.github.io",
+  "name": "Respire",
+  "description": "Un respiro para tus reuniones. Shows how long you have been talking during a call and nudges you to pause and let others speak. Needs the respired daemon from the project page.",
+  "shell-version": ["48", "49", "50"],
+  "url": "https://github.com/mmontiel0904/respire",
+  "version-name": "0.1.0"
+}

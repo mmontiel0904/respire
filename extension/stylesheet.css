@@ -1,0 +1,46 @@
+/* Ring drawn around the microphone icon. */
+.respire-ring {
+    width: 24px;
+    height: 24px;
+}
+
+.respire-icon {
+    icon-size: 14px;
+    padding: 0;
+}
+
+.respire-speaking .respire-icon {
+    color: #57e389;
+}
+
+.respire-warning .respire-icon {
+    color: #f8b52e;
+}
+
+.respire-alert .respire-icon {
+    color: #ed333b;
+}
+
+.respire-time {
+    font-weight: bold;
+    font-feature-settings: "tnum";
+    font-size: 1.4em;
+}
+
+.respire-status {
+    font-size: 0.9em;
+}
+
+.respire-limits {
+    spacing: 6px;
+}
+
+.respire-limit-button {
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.respire-limit-button:checked {
+    background-color: -st-accent-color;
+    color: -st-accent-fg-color;
+}
